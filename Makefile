@@ -1,5 +1,5 @@
 define build_container
-	cd $1 && docker build . -t dev-containers/$1:latest
+	cd $1 && docker build . -t dev-containers:$1
 endef
 
 all: base rust

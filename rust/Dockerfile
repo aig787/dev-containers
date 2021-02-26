@@ -1,5 +1,4 @@
-ARG BASE_VERSION=latest
-FROM dev-containers/base:${BASE_VERSION}
+FROM aig787/dev-containers:base
 
 USER root
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y pkg-config
